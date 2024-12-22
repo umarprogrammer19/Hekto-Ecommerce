@@ -62,11 +62,11 @@ const TopBar = () => {
           </div>
 
           {/* Login */}
-<li className="flex items-center gap-2 hover:text-gray-200">
-  <Link href="/account">
-    <FaUser />
-  </Link>
-</li>
+          <li className="flex items-center gap-2 hover:text-gray-200">
+            <Link href="/account">
+              <FaUser />
+            </Link>
+          </li>
 
 
         </div>

@@ -57,7 +57,7 @@ function Header() {
                   Pages
                 </button>
                 {isPagesDropdownOpen && (
-                  <ul className="absolute top-full mt-2 bg-white shadow-md rounded-md text-black text-sm">
+                  <ul className="absolute mt-2 bg-white shadow-md rounded-md text-black text-sm z-10">
                     <li className="px-4 py-2 hover:bg-gray-100">
                       <Link href="/cart">Cart</Link>
                     </li>
