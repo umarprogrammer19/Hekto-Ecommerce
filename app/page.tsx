@@ -10,7 +10,7 @@ import TrendingProduct from "@/components/TrendingProduct";
 import UniqueFeature from "@/components/UniqueFeature";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <Hero />
