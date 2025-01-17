@@ -16,7 +16,7 @@ export default async function Shop() {
     discountPercentage,
     isFeaturedProduct,
     stockLevel,
-  category,
+    category,
  }`;
   const products = await client.fetch(query);
 

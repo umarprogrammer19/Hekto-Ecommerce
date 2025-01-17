@@ -21,7 +21,7 @@ function Page({ params }: { params: { id: string } }) {
       discountPercentage,
       isFeaturedProduct,
       stockLevel,
-    category,
+      category,
    }`;
 
   useEffect(() => {

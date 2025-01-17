@@ -9,7 +9,6 @@ export const fetchData = async (): Promise<void> => {
         }
 
         const { products } = await res.json();
-        // console.log(products);
 
         for (const {
             name,
