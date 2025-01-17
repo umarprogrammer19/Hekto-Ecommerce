@@ -10,7 +10,7 @@ export default {
             validation: (Rule: any) => Rule.required().error('Name is required'),
         },
         {
-            name: 'image',
+            name: 'imagePath',
             type: 'image',
             title: 'Image',
             options: {
