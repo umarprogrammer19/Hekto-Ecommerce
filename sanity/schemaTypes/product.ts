@@ -1,5 +1,5 @@
 export default {
-    name: 'Pschema',
+    name: 'product',
     type: 'document',
     title: 'Product',
     fields: [
