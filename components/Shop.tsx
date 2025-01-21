@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
 
 const query = `*[_type == "product"]{
@@ -16,11 +16,21 @@ const query = `*[_type == "product"]{
   category,
 }`;
 
-export default async function Shop() {
+export default function Shop() {
 
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState([]);
 
-  
+  useEffect(() => {
+    (async () => {
+      try {
+        const pro = await client.fetch(query);
+        setProducts(pro)
+      } catch (error) {
+        console.log(error);
+      }
+    })()
+  }, [])
+
 
   return (
     <section className="my-20">
