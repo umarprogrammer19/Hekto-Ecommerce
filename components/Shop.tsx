@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
 
@@ -63,11 +63,16 @@ export default function Shop() {
           </div>
         </div>
         <div className="grid lg:grid-cols-4   md:grid-cols-2 grid-cols-1 gap-8 mt-12">
-          {products.map((product: any) => (
+          {products.map((product: {
+            _id: string;
+            name: string;
+            imagePath: string;
+            price: number;
+          }) => (
             <Link key={product._id} href={`/products/${product._id}`}>
               <div
                 className="col-span-1 hover:opacity-65 hover:blur-0  flex items-center flex-col gap-2"
-                key={product.id}
+                key={product._id}
               >
                 <div className="bg-[#F6F7FB] w-full lg:w-[220px] h-[250px]  py-4 flex items-center justify-center">
                   <Image
