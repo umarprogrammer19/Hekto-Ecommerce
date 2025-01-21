@@ -1,8 +1,8 @@
 "use client";
-import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
-import React, { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const query = `*[_type == "product"]{
   _id,
