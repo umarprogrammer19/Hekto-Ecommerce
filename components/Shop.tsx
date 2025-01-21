@@ -1,24 +1,26 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { client } from "@/sanity/lib/client";
 
+const query = `*[_type == "product"]{
+  _id,
+  name,
+  "imagePath": imagePath.asset->url,
+  price,
+  description,
+  discountPercentage,
+  isFeaturedProduct,
+  stockLevel,
+  category,
+}`;
 
 export default async function Shop() {
 
-  const query = `*[_type == "product"]{
-    _id,
-    name,
-    "imagePath": imagePath.asset->url,
-    price,
-    description,
-    discountPercentage,
-    isFeaturedProduct,
-    stockLevel,
-    category,
- }`;
-  const products = await client.fetch(query);
+  const [products, setProducts] = useState();
+
+  
 
   return (
     <section className="my-20">

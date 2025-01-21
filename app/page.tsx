@@ -8,11 +8,8 @@ import LatestProduct from "@/components/LatestProduct";
 import TopCategory from "@/components/TopCategory";
 import TrendingProduct from "@/components/TrendingProduct";
 import UniqueFeature from "@/components/UniqueFeature";
-import { fetchData } from "@/migration";
 import Image from "next/image";
-
 export default async function Home() {
-  // await fetchData()
   return (
     <div>
       <Hero />
