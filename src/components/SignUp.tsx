@@ -60,7 +60,7 @@ const SignUp = () => {
                 </div>
                 <LabelInputContainer className="mb-8">
                     <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" placeholder="projectmayhem@fc.com" type="email" value={userData.email} onChange={(e: any) => setUserData({ ...userData, email: e.target.value })} />
+                    <Input id="email" placeholder="umarofficial0121@gmail.com" type="email" value={userData.email} onChange={(e: any) => setUserData({ ...userData, email: e.target.value })} />
                 </LabelInputContainer>
                 <LabelInputContainer className="mb-8 relative">
                     <Label htmlFor="password">Password</Label>
