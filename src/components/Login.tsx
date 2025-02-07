@@ -59,7 +59,7 @@ const LoginPage = () => {
               <Label htmlFor="email">Email Address</Label>
               <Input
                 id="email"
-                placeholder="projectmayhem@fc.com"
+                placeholder="umarofficial0121@gmail.com"
                 type="email"
                 value={userData.email}
                 onChange={(e) =>

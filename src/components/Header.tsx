@@ -66,8 +66,8 @@ const Header = () => {
             <div className='lg:block hidden py-2 bg-[#7E33E0]'>
                 <div className='flex max-w-[84%] mx-auto justify-between items-center'>
                     <div className='flex justify-center gap-6 text-white items-center'>
-                        <span>ammarshaikh50099@gmail.com</span>
-                        <span>03162324240</span>
+                        <span>umarofficial0121@gmail.com</span>
+                        <span>0317-2472531</span>
                     </div>
                     <div className='text-white flex gap-4 items-center'>
                         <Select>
