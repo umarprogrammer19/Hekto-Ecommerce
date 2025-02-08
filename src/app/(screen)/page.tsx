@@ -9,7 +9,7 @@ import TopCategories from "@/components/TopCategories";
 import TrendingProducts from "@/components/TrendingProducts";
 import UniqueFeatures from "@/components/UniqueFeatures";
 import WhatShopexOffer from "@/components/WhatShopexOffer";
-export default function Home() {
+export default async function Home() {
   return (
     <main className="">
       <Banner />
